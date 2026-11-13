@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#081225"><title>Register | PakhiMam Free Job</title><link rel="stylesheet" href="auth.css"></head>
+<body><main class="shell">
+<a class="brand" href="index.html"><span class="mark">P</span><span>PakhiMam<small>FREE JOB</small></span></a>
+<section class="panel"><span class="eyebrow">CREATE YOUR PROFILE</span><h1>নতুন অ্যাকাউন্ট</h1><p class="sub">PakhiMam Free Job-এ স্বাগতম। এটি আপাতত শুধু ডিজাইন ও ফর্ম পরীক্ষার Demo।</p>
+<form id="demoForm">
+<div class="field"><label for="name">আপনার নাম</label><input id="name" name="name" type="text" placeholder="যেমন: Tamim" required maxlength="60"></div>
+<div class="field"><label for="contact">Email অথবা Phone</label><input id="contact" name="contact" type="text" placeholder="শুধু পরীক্ষার নমুনা লিখুন" required maxlength="100"></div>
+<div class="field"><label for="password">পাসওয়ার্ড (Demo)</label><input id="password" name="password" type="password" placeholder="বাস্তব পাসওয়ার্ড দেবেন না" required minlength="6"></div>
+<label class="check"><input type="checkbox" required><span>আমি বুঝেছি এটি Demo; কোনো বাস্তব অ্যাকাউন্ট তৈরি বা তথ্য সংরক্ষণ হবে না।</span></label>
+<button class="btn" type="submit">Demo Registration পরীক্ষা</button><div class="message" id="message" role="status"></div>
+</form>
+<div class="demo"><b>নিরাপত্তা সতর্কতা:</b> এই সাইট এখন GitHub-এর Public Demo। এখানে নিজের আসল Email, ফোন নম্বর বা পাসওয়ার্ড লিখবে না। ফর্মটি কোনো সার্ভারে তথ্য পাঠায় না এবং অ্যাকাউন্ট তৈরি করে না।</div>
+<p class="below">আগে থেকেই অ্যাকাউন্ট আছে? <a href="login.html">লগইন</a></p></section>
+<p class="back"><a href="index.html">← হোমপেজে ফিরে যাও</a></p>
+</main>
+<script>
+document.getElementById('demoForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ document.getElementById('message').style.display='block';
+ document.getElementById('message').textContent='Demo form ঠিকভাবে কাজ করছে। কোনো তথ্য পাঠানো বা সংরক্ষণ করা হয়নি; বাস্তব Registration এখনো চালু নয়।';
+});
+</script></body></html>

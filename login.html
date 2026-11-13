@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#081225"><title>Login | PakhiMam Free Job</title><link rel="stylesheet" href="auth.css"></head>
+<body><main class="shell">
+<a class="brand" href="index.html"><span class="mark">P</span><span>PakhiMam<small>FREE JOB</small></span></a>
+<section class="panel"><span class="eyebrow">WELCOME BACK</span><h1>লগইন করুন</h1><p class="sub">আপনার অ্যাকাউন্টে প্রবেশের ডিজাইন প্রিভিউ।</p>
+<form id="demoForm">
+<div class="field"><label for="contact">Email অথবা Phone</label><input id="contact" type="text" placeholder="শুধু পরীক্ষার নমুনা লিখুন" required maxlength="100"></div>
+<div class="field"><label for="password">পাসওয়ার্ড (Demo)</label><input id="password" type="password" placeholder="বাস্তব পাসওয়ার্ড দেবেন না" required minlength="6"></div>
+<button class="btn" type="submit">Demo Login পরীক্ষা</button><div class="message" id="message" role="status"></div>
+</form>
+<div class="demo"><b>নিরাপত্তা সতর্কতা:</b> এখানে নিজের আসল লগইন তথ্য লিখবে না। এটি Public Demo; কোনো তথ্য সার্ভারে পাঠানো হয় না, কোনো অ্যাকাউন্টে Login-ও হয় না।</div>
+<p class="below">নতুন ব্যবহারকারী? <a href="register.html">অ্যাকাউন্ট তৈরি</a></p></section>
+<p class="back"><a href="index.html">← হোমপেজে ফিরে যাও</a></p>
+</main>
+<script>
+document.getElementById('demoForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ document.getElementById('message').style.display='block';
+ document.getElementById('message').textContent='Demo form ঠিকভাবে কাজ করছে। কোনো তথ্য পাঠানো বা সংরক্ষণ করা হয়নি; বাস্তব Login এখনো চালু নয়।';
+});
+</script></body></html>
